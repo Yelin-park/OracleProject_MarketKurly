@@ -4,13 +4,14 @@
   <img src="images/marketkurly_1.PNG">
   <br>
 </p>
+<a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/%EB%A7%88%EC%BC%93%EC%BB%AC%EB%A6%ACDB_4%EC%A1%B0(%EC%BD%94%EC%9E%A5)_%EC%B5%9C%EC%A2%85.pdf">MarketKurly 발표 자료</a>
 
 <br>
 
 ## 📃목차
 1. 프로젝트 소개
 2. DB 모델링
-3. 구현 기능
+3. 기능 구현
 4. 느낀점
 
 <br><br>
@@ -57,7 +58,7 @@
 
 <br><br>
 
-## 3. 구현 기능
+## 3. 기능 구현
 ### 상품 관련
 - <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%83%81%ED%92%88%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%93%B1%EB%A1%9D.sql">상품 이미지 등록</a>
 - <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%83%81%ED%92%88%20%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%93%B1%EB%A1%9D.sql">상품 상세페이지 등록</a>
@@ -73,7 +74,7 @@
 
 <br>
 
-## 3-1. 구현 기능 쿼리
+## 3-1. 기능 구현 PL/SQL
 ### [상품 등록 관련]
 - 상품 이미지와 상세페이지는 상품 코드를 참조하고 있어 상품이 존재해야 등록이 가능
 - 상품 상세페이지에서 상세타입은 설명, 알레르기정보, 영양정보, 원산지만 입력이 가능
