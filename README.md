@@ -4,11 +4,11 @@
   <img src="images/marketkurly_1.PNG">
   <br>
 </p>
-<a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/%EB%A7%88%EC%BC%93%EC%BB%AC%EB%A6%ACDB_4%EC%A1%B0(%EC%BD%94%EC%9E%A5)_%EC%B5%9C%EC%A2%85.pdf">MarketKurly 발표 자료</a>
+📌 <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/%EB%A7%88%EC%BC%93%EC%BB%AC%EB%A6%ACDB_4%EC%A1%B0(%EC%BD%94%EC%9E%A5)_%EC%B5%9C%EC%A2%85.pdf">MarketKurly 발표 자료</a>
 
 <br>
 
-## 📃목차
+## 📃 목차
 1. 프로젝트 소개
 2. DB 모델링
 3. 기능 구현
@@ -16,9 +16,9 @@
 
 <br><br>
 
-## 1. 프로젝트 소개
+## 📚 1. 프로젝트 소개
 
-### 프로젝트 동기/개요
+### 📚 프로젝트 동기/개요
 - 최근 인기가 많고 사용자가 많은 e-commerce를 기준으로 찾다 마켓컬리를 선정하게 되었습니다. <br>
 - 마켓컬리 홈페이지를 직접 이용하며 요구분석을 진행하였습니다. <br>
 - 요구분석 후 개념적, 논리적, 물리적 모델링을 진행하였습니다. <br>
@@ -38,7 +38,7 @@
 
 <br><br>
 
-## 2. DB 모델링
+## 📝 2. DB 모델링
 ### 📝 개념적 DB 모델링
 <p align="center">
   <br>
@@ -58,7 +58,7 @@
 
 <br><br>
 
-## 3. 기능 구현
+## 💻 3. 기능 구현
 ### 상품 관련
 - <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%83%81%ED%92%88%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%93%B1%EB%A1%9D.sql">상품 이미지 등록</a>
 - <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%83%81%ED%92%88%20%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%93%B1%EB%A1%9D.sql">상품 상세페이지 등록</a>
@@ -74,7 +74,7 @@
 
 <br>
 
-## 3-1. 기능 구현 PL/SQL
+## 💻 3-1. 기능 구현 PL/SQL
 ### [상품 등록 관련]
 - 상품 이미지와 상세페이지는 상품 코드를 참조하고 있어 상품이 존재해야 등록이 가능
 - 상품 상세페이지에서 상세타입은 설명, 알레르기정보, 영양정보, 원산지만 입력이 가능
@@ -328,6 +328,15 @@ END;
 <br>
 
 ### 쿠폰 등록 / 쿠폰 발급
+- 쿠폰은 등록 후 회원에게 발급이 가능
+- 쿠폰 등록시 할인율과 할인적용금액 중 1개만 적용 가능
+- 할인적용금액은 0원 이상, 할인율은 0.00 ~ 1.00(0% ~ 100%) 사이로 적용 가능
+- 쿠폰 발급시 회원코드와 쿠폰코드가 없으면 발급 불가능
+- 쿠폰 발급시 사용가능한 쿠폰만 발급 가능
+- 쿠폰 종료 일자는 오늘날짜이거나 더 커야 발급 가능
+- 
+<br>
+
 - <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%BF%A0%ED%8F%B0%20%EB%93%B1%EB%A1%9D.sql">쿠폰 등록</a>
 ~~~
 1) 쿠폰코드 시퀀스 생성
@@ -482,6 +491,13 @@ EXEC MK_P_MYCOUPON (9, 5, '2022.05.10', 0); -- 쿠폰 발급
 <br><br>
 
 ### <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%ED%8A%B9%EA%B0%80%2C%ED%98%9C%ED%83%9D%20%EB%93%B1%EB%A1%9D.sql">특가, 혜택 등록</a>
+
+- 특가/혜택은 직원이 등록 가능하기에 직원코드가 존재하지 않으면 등록 불가능
+- 특가/혜택 시작일은 오늘날짜이거나 더 커야 등록 가능
+- 특가/혜택 종료일은 시작일과 같거나 작아야 등록 가능
+
+<br>
+
 ~~~
 1) 특가/혜택 코드 시퀀스 생성
 CREATE SEQUENCE seq_mk_benefits_code
@@ -552,6 +568,9 @@ EXEC MK_P_BENEFITS('5월 가정의 달 이벤트', 'C:\admin\marketKurlyProject'
 
 ### <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%ED%9A%8C%EC%9B%90%ED%83%88%ED%87%B4.sql">회원 탈퇴</a>
 - 회원 탈퇴 시 ID, PW, 주소, EMAIL, 이름, 생년월일, 성별, 연락처를 임의의 값으로 변경
+
+<br>
+
 ~~~
 CREATE OR REPLACE PROCEDURE mk_p_customer_withdrawal
 (
@@ -610,7 +629,7 @@ EXEC MK_P_CUSTOMER_WITHDRAWAL(6);
 
 <br><br>
 
-## 4. 느낀점
+## 🔔 4. 느낀점
 - 처음해보는 오라클 프로젝트로 DB 모델링을 하는 것이 서툴었습니다. 서툴었던 만큼 중간에 테이블에 컬럼을 추가하고 제약조건을 수정하고 여러 번 테스트를 하면서 시퀀스를 삭제했다가 생성하면서 많은 시행 착오를 겪었습니다. 시행 착오를 겪으면서 프로시저를 만들고 쿼리를 짜면서 DB 모델링이 정말 중요하다는 것을 깨달았고 설계를 잘해야 튼튼한 완성 작품이 나올 수 있다는 것을 느꼈습니다. <br>
 
 - 상품이나 쿠폰, 특가/혜택을 등록하는 부분에 있어서 예외처리 하는 것이 생각보다 많은 경우의 수를 생각해야 하고 작은 부분으로 사용자가 불편함을 느낄 수 있을 거 같다고 느꼈습니다. <br>
