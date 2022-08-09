@@ -23,15 +23,11 @@
 - 요구분석 후 개념적, 논리적, 물리적 모델링을 진행하였습니다. <br>
 - 4명의 팀원이 업무를 분담하여 각자 맡은 부분에 대하여 프로시저, 트리거 등 쿼리를 작성하여 기능을 구현하였습니다. (PL/SQL 사용)<br>
 
-<br>
-
 ### 🔨 기술 스택
 - <img src="https://img.shields.io/badge/-ORACLE-F80000?style=for-the-badge&logo=oracle">
 - <img src="https://img.shields.io/badge/-draw.io-181717?style=for-the-badge&logo">
 - <img src="https://img.shields.io/badge/-exERD-181717?style=for-the-badge&logo">
 - <img src="https://img.shields.io/badge/-SQL Developer-181717?style=for-the-badge&logo">
-
-<br>
 
 ### 👪 팀원
 - 김민
@@ -52,6 +48,7 @@
 <br>
 
 ### 📝 논리적/물리적 DB 모델링
+<a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/marketKurly_%EC%B5%9C%EC%A2%85.exerd" >DB 모델링 자세히 보기</a>
 <p align="center">
   <br>
   <img src="images/marketkurly_eXERD.png">
@@ -62,17 +59,17 @@
 
 ## 3. 구현 기능
 ### 상품 관련
-- 상품 상세페이지 등록
-- 상품 이미지 등록
-- 상품 등록
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%83%81%ED%92%88%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%93%B1%EB%A1%9D.sql">상품 이미지 등록</a>
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%83%81%ED%92%88%20%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%93%B1%EB%A1%9D.sql">상품 상세페이지 등록</a>
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%83%81%ED%92%88%20%EB%93%B1%EB%A1%9D.sql">상품 등록</a>
 
 ### 관리자 관련
-- 업체 등록
-- 직원 등록
-- 쿠폰 등록
-- 쿠폰 발급
-- 특가, 혜택 등록
-- 회원 탈퇴
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%97%85%EC%B2%B4%20%EB%93%B1%EB%A1%9D.sql">업체 등록</a>
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%A7%81%EC%9B%90%20%EB%93%B1%EB%A1%9D.sql">직원 등록</a>
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%BF%A0%ED%8F%B0%20%EB%93%B1%EB%A1%9D.sql">쿠폰 등록</a>
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%BF%A0%ED%8F%B0%20%EB%B0%9C%EA%B8%89.sql">쿠폰 발급</a>
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%ED%8A%B9%EA%B0%80%2C%ED%98%9C%ED%83%9D%20%EB%93%B1%EB%A1%9D.sql">특가/혜택 등록</a>
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%ED%9A%8C%EC%9B%90%ED%83%88%ED%87%B4.sql">회원 탈퇴</a>
 
 <br>
 
@@ -87,7 +84,7 @@
 
 <br>
 
-- 상품 이미지 등록
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%83%81%ED%92%88%20%EC%9D%B4%EB%AF%B8%EC%A7%80%20%EB%93%B1%EB%A1%9D.sql">상품 이미지 등록</a>
 ~~~
 1) 상품 이미지 코드 시퀀스 생성
 
@@ -133,7 +130,7 @@ END;
 
 <br>
 
-- 상품 상세페이지 등록
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%83%81%ED%92%88%20%EC%83%81%EC%84%B8%ED%8E%98%EC%9D%B4%EC%A7%80%20%EB%93%B1%EB%A1%9D.sql">상품 상세페이지 등록</a>
 ~~~
 1) 상품 상세페이지 코드 시퀀스 생성
 
@@ -189,7 +186,7 @@ END;
 
 <br>
 
-- 상품 등록
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%83%81%ED%92%88%20%EB%93%B1%EB%A1%9D.sql">상품 등록</a>
 ~~~
 1) 상품 코드 시퀀스 생성
 
@@ -318,7 +315,7 @@ END;
 <img src="images/상품이미지등록.png">
 <br>
 <img src="images/상품상세페이지등록.png">
-<br><br>
+<br>
 
 ### [상품 등록 관련 예외 결과]
 <img src="images/상품등록예외.png">
@@ -327,10 +324,10 @@ END;
 <br>
 <img src="images/상품상세페이지예외.png">
 
-<br><br>
+<br>
 
 ### 쿠폰 등록 / 쿠폰 발급
-- 쿠폰 등록
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%BF%A0%ED%8F%B0%20%EB%93%B1%EB%A1%9D.sql">쿠폰 등록</a>
 ~~~
 1) 쿠폰코드 시퀀스 생성
 CREATE SEQUENCE seq_cou_id
@@ -399,7 +396,7 @@ END;
 
 <br>
 
-- 쿠폰 발급
+- <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%EC%BF%A0%ED%8F%B0%20%EB%B0%9C%EA%B8%89.sql">쿠폰 발급</a>
 ~~~
 1) 마이쿠폰코드 시퀀스 생성
 CREATE SEQUENCE seq_mycoupon_code
@@ -475,7 +472,7 @@ EXEC MK_P_MYCOUPON (9, 5, '2022.05.10', 0); -- 쿠폰 발급
 <img src="images/쿠폰등록.png">
 <br>
 <img src="images/쿠폰발급.png">
-<br><br>
+<br>
 
 ### [쿠폰 등록 및 발급 예외 결과]
 <img src="images/쿠폰등록예외.png">
@@ -483,7 +480,7 @@ EXEC MK_P_MYCOUPON (9, 5, '2022.05.10', 0); -- 쿠폰 발급
 <img src="images/쿠폰발급예외.png">
 <br><br>
 
-### 특가, 혜택 등록
+### <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%ED%8A%B9%EA%B0%80%2C%ED%98%9C%ED%83%9D%20%EB%93%B1%EB%A1%9D.sql">특가, 혜택 등록</a>
 ~~~
 1) 특가/혜택 코드 시퀀스 생성
 CREATE SEQUENCE seq_mk_benefits_code
@@ -546,13 +543,13 @@ END;
 EXEC MK_P_BENEFITS('5월 가정의 달 이벤트', 'C:\admin\marketKurlyProject', '2022.05.01', '2022.05.30', 1);
 ~~~
 <img src="images/특가혜택등록.png">
-<br><br>
+<br>
 
 ### [특가, 혜택 등록 예외 결과]
 <img src="images/특가혜택등록예외.png">
 <br><br>
 
-### 회원 탈퇴
+### <a href="https://github.com/Yelin-park/OracleProject_MarketKurly/blob/main/PLSQL/Localhost_SCOTT_%ED%9A%8C%EC%9B%90%ED%83%88%ED%87%B4.sql">회원 탈퇴</a>
 - 회원 탈퇴 시 ID, PW, 주소, EMAIL, 이름, 생년월일, 성별, 연락처를 임의의 값으로 변경
 ~~~
 CREATE OR REPLACE PROCEDURE mk_p_customer_withdrawal
