@@ -45,7 +45,7 @@
 ### 📝 개념적 DB 모델링
 <p align="center">
   <br>
-  <img src="images/marketkurly_ERD.PNG">
+  <img src="images/marketkurly_ERD.png">
   <br>
 </p>
 
@@ -54,7 +54,7 @@
 ### 📝 논리적/물리적 DB 모델링
 <p align="center">
   <br>
-  <img src="images/marketkurly_eXERD.PNG">
+  <img src="images/marketkurly_eXERD.png">
   <br>
 </p>
 
@@ -313,19 +313,19 @@ BEGIN
 END;
 ~~~
 
-<img src="images/상품등록.PNG">
+<img src="images/상품등록.png">
 <br>
-<img src="images/상품이미지등록.PNG">
+<img src="images/상품이미지등록.png">
 <br>
-<img src="images/상품상세페이지등록.PNG">
+<img src="images/상품상세페이지등록.png">
 <br><br>
 
 ### [상품 등록 관련 예외 결과]
 <img src="images/상품등록예외.png">
 <br>
-<img src="images/상품이미지예외.PNG">
+<img src="images/상품이미지예외.png">
 <br>
-<img src="images/상품상세페이지예외.PNG">
+<img src="images/상품상세페이지예외.png">
 
 <br><br>
 
@@ -480,7 +480,7 @@ EXEC MK_P_MYCOUPON (9, 5, '2022.05.10', 0); -- 쿠폰 발급
 ### [쿠폰 등록 및 발급 예외 결과]
 <img src="images/쿠폰등록예외.png">
 <br>
-<img src="images/쿠폰발급예외.PNG">
+<img src="images/쿠폰발급예외.png">
 <br><br>
 
 ### 특가, 혜택 등록
